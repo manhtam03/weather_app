@@ -7,7 +7,7 @@ import 'package:weather_app/views/widgets/weather/weather_info_widget.dart';
 import 'package:weather_app/firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-// import 'package:weather_app/favorite_city/screen/search_screen.dart';
+import 'package:weather_app/views/widgets/search_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -56,8 +56,9 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.transparent,
       ),
-      // drawer: const SearchScreen(),
-      drawer: MyDrawer(),
+      drawer: const SearchScreen(),
+      // drawer: MyDrawer(),
+
 
       body: Stack(
         children: [
