@@ -38,10 +38,11 @@ class Weather {
       String result = date.toString().split(" ")[1].substring(0, 5);
       return result;
     }
+
     String icon(String code) {
       return 'https://openweathermap.org/img/wn/$code@2x.png';
     }
-    // String condition = json['current']['weather'][0]['description'];
+
     return Weather(
       temperature: json['current']['temp'].toString(),
       condition: json['current']['weather'][0]['description'],

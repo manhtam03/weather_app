@@ -1,4 +1,3 @@
-import 'package:weather_app/views/common/drawer.dart';
 import 'package:weather_app/views/widgets/weather/daily_widget.dart';
 import 'package:weather_app/models/info/weather.dart';
 import 'package:weather_app/services/weather_services.dart';
@@ -59,7 +58,6 @@ class _HomePageState extends State<HomePage> {
       drawer: const SearchScreen(),
       // drawer: MyDrawer(),
 
-
       body: Stack(
         children: [
           Container(
@@ -98,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                   Container(
-                                    margin: const EdgeInsets.symmetric(horizontal: 20),
+                                    margin: const EdgeInsets.symmetric(horizontal: 10),
                                     height: 100,
                                     width: 100,
                                     child: Image.network(
